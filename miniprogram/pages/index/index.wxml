@@ -1,0 +1,37 @@
+<view class="page-body">
+  <view class="page-section">
+    <view class="weui-cells__title">本金（单位：元）</view>
+    <view class="weui-cells weui-cells_after-title">
+      <view class="weui-cell weui-cell_input">
+        <input class="weui-input" auto-focus type="number" bindinput="principalInput" value="{{principal}}"/>
+      </view>
+    </view>
+  </view>
+  <view class="page-section">
+    <view class="weui-cells__title">年化收益率（单位：%）</view>
+    <view class="weui-cells weui-cells_after-title">
+      <view class="weui-cell weui-cell_input">
+        <input class="weui-input" type="number" bindinput="yieldRateInput" value="{{yieldRate}}"/>
+      </view>
+    </view>
+  </view>
+
+  <view class="page-section">
+    <view class="weui-cells__title">投资年限（单位：年）</view>
+    <view class="weui-cells weui-cells_after-title">
+      <view class="weui-cell weui-cell_input">
+        <input class="weui-input" type="number" bindinput="yearInput" value="{{year}}"/>
+      </view>
+    </view>
+  </view>
+
+  <view class="page-section">
+    <view class="weui-cells__title">最终受益（单位：元）</view>
+    <text class="result">{{result}}</text>
+  </view>
+
+  <view class="btn-area">
+    <button type="primary" bindtap="calculate">计算</button>
+    <button type="default" bindtap="clear">清空</button>
+  </view>
+</view>
